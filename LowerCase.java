@@ -11,7 +11,25 @@ public class LowerCase {
     * Non-letter characters are left as is.
     */
     public static String lowerCase(String s) {
-        // Replace the following statement with your code
-        return null;
-    }
-}
+       
+        String str = "" ;
+           int i = 0 ;
+            while (i<s.length())
+            {
+                char ch=s.charAt(i);
+            
+                    if ((ch<='Z')&&(ch>='A'))
+                    {
+                        ch +=32 ; 
+                        
+                    }    
+                       str += ch ;
+                        
+                        i++;
+
+            }
+       
+        return str;
+           }                 // Replace the following statement with your code
+        }
+    
